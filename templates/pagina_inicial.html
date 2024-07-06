@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - Youth Flask</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <style>
+    .btn-add-contact {
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Youth Flask</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#contatos">Contatos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="btn-add-contact">
+      <a class="btn modal-trigger" href="#modal1">Adicionar novo contato</a>
+    </div>
+
+    <table class="highlight">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Celular</th>
+          <th>#Tags</th>
+          <th>...</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Fulano</td>
+          <td>fulano@email.com</td>
+          <td>85-99422-0001</td>
+          <td>
+            <div class="chip">Família</div>
+            <div class="chip">Amigos</div>
+          </td>
+          <td>
+            <a class="btn red">Deletar</a>
+            <a class="btn blue">Editar</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+        <h4>Adicionar um contato</h4>
+        <form>
+            <div class="row">
+            <div class="input-field col s12">
+                <input id="name" type="text" class="validate">
+                <label for="name">Nome</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="phone" type="text" class="validate">
+                <label for="phone">Celular</label>
+            </div>
+            <div class="input-field col s12">
+                <input id="tags" type="text" class="validate">
+                <label for="tags">#Tags</label>
+            </div>
+            </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn">Adicionar Contato</a>
+        <a href="#!" class="modal-close waves-effect waves-red btn-flat">Limpar Campos</a>
+        </div>
+    </div> 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.modal');
+      var instances = M.Modal.init(elems);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!-- <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<!-- 
+     <!-- Compiled and minified CSS -->
+     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+     <!-- <style> --> -->
+
+        <!-- .btn-fora { -->
+            <!-- margin-top: 50pt; -->
+        <!-- } -->
+
+        <!-- .cabecalho{
+            text-align: ;
+        }
+     </style>
+</head> -->
+<!-- <body>
+    <!-- Dropdown Structure -->
+<!-- <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">three</a></li>
+  </ul> -->
+  <!-- <nav>
+    <div class="nav-wrapper">
+      <a href="logo.png" class="brand-logo">ANALOG</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="sass.html">About</a></li>
+        <li><a href="curriculo.html">Mais info</a></li>
+        <!-- Dropdown Trigger -->
+        <!-- <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li> -->
+      <!-- </ul>
+    </div> -->
+  <!-- </nav> -->
+          
+
+<!-- 
+<!-- <table>
+    <thead>
+      <div class="cabecalho">
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Celular</th>
+            <th>Tags</th>
+        </tr>
+      </div>
+    </thead> --> --> -->
+
+    <!-- <tbody>
+      <tr>
+        <td>Juvenaldo Canja</td>
+        <td>batchijuve@gmail.com</td>
+        <td>(85) 9 97822831</td>
+        <td>Professor estagiario</td>
+      </tr>
+      <tr>
+        <td>Juvenaldo Canja</td>
+        <td>batchijuve@gmail.com</td>
+        <td>(85) 9 97822831</td>
+        <td>Professor estagiario</td> -->
+      <!-- </tr>
+      <tr>
+        <td>Juvenaldo Canja</td>
+        <td>batchijuve@gmail.com</td>
+        <td>(85) 9 97822831</td>
+        <td>Professor estagiario</td>
+      </tr>
+<!--       
+      <!-- <tr> -->
+        <!-- <td>Juvenaldo Canja</td>
+        <td>batchijuve@gmail.com</td>
+        <td>(85) 9 97822831</td>
+        <td>Professor estagiario</td> -->
+      <!-- </tr> --> -->
+      <!-- <tr>
+        <td>Juvenaldo Canja</td>
+        <td>batchijuve@gmail.com</td>
+        <td>(85) 9 97822831</td>
+        <td>Professor estagiario</td>
+      </tr>
+    </tbody> -->
+  <!-- </table> --> -->
+
+  <!-- <div class="btn-fora">
+    <a class="waves-effect waves-light btn">Adicionar
+<!-- Modal Trigger -->
+<!-- <button data-target="modal1" class="btn modal-trigger">Modal</button> --> -->
+
+
+    <!-- </a> --> -->
+  
+
+
+<!-- MODAL -->
+
+
+
+
+
+
+
+
+      <!-- Compiled and minified JavaScript --> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+
+<!-- </body> -->
+<!-- </html> -->
